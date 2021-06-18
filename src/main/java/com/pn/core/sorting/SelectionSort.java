@@ -10,7 +10,7 @@ public class SelectionSort {
         selectionSortStrategy(input, 7);
 
         for(int element: input)
-            System.out.println(element+" ");
+            System.out.print(element+" ");
     }
 
     private static void selectionSortStrategy(int[] input, int size) {
