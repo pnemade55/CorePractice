@@ -48,8 +48,8 @@ class SubSetArrayUsingHashMap {
     // Driver Code
     public static void main(String[] args)
     {
-        int[] arr1 = { 1, 1, 1, 2 };
-        int[] arr2 = { 1, 1 };
+        int[] arr1 = { 1, 3, 1, 2 };
+        int[] arr2 = { 1, 2, 3 };
 
         int m = arr1.length;
         int n = arr2.length;

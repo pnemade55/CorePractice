@@ -6,7 +6,7 @@ import java.util.Arrays;
  * created by : pnema
  * on 6/26/2021
  */
-public class rotateArrayOnce {
+public class RotateArrayOnce {
     public static void main(String[] args) {
         int arr[] ={1,2,3,4,5};
         rotateAntiClockApproach1BitShifting(arr);

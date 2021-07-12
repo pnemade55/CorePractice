@@ -10,7 +10,7 @@ import java.util.Map;
  * created by : pnema
  * on 6/9/2021
  */
-public class permutaion {
+public class StrPermutaion {
     public static void main(String[] args) {
         String given = "1234";
 

@@ -4,7 +4,7 @@ package com.pn.core;
  * created by : pnema
  * on 6/20/2021
  */
-public class rotateArrayKtimes {
+public class RotateArrayKtimes {
     public static void main(String[] args) {
         int arr[] ={1,2,3,4,5};
         int rotate= 3;
