@@ -20,7 +20,7 @@ class QuickSort {
     array, and places all smaller (smaller than pivot)
     to left of pivot and all greater elements to right
     of pivot */
-    static int partition(int[] arr, int low, int high)
+    static int  partition(int[] arr, int low, int high)
     {
 
         // pivot
@@ -62,7 +62,7 @@ class QuickSort {
             // pi is partitioning index, arr[p]
             // is now at right place
             int pi = partition(arr, low, high);
-
+            //int pi = partition1stElementAsPivot(arr, low, high);
             // Separately sort elements before
             // partition and after partition
             quickSort(arr, low, pi - 1);
@@ -70,6 +70,20 @@ class QuickSort {
         }
     }
 
+    static int partition1stElementAsPivot(int[] arr, int low, int high) {
+        int pivot = arr[low];
+        int i = low;
+        for (int j = low + 1; j < arr.length; j++) {
+
+            if (arr[j] < pivot) {
+                ++i;
+                swap(arr, i, j);
+
+            }
+        }
+        swap(arr, i, low);
+        return i;
+    }
     // Function to print an array
     static void printArray(int[] arr, int size)
     {
