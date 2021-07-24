@@ -25,7 +25,7 @@ class A {
 
 class B extends A {
     B(){
-        System.out.println("A");
+        System.out.println("B");
     }
     public void method1() throws Exception {
         System.out.println("B: Method1");
