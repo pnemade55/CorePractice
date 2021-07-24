@@ -33,7 +33,7 @@ public class DemoListStreaming {
 
         System.out.println("------- Sorted map using value ---------------");
         Map<Employee, String> employeesbyCity = emp.entrySet().stream()
-                .sorted(Map.Entry.comparingByValue())
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .collect(
                         Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new)
                 );
